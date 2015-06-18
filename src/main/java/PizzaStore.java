@@ -24,5 +24,7 @@ public abstract class PizzaStore {
 
         for (PizzaStore ps : lst) ps.orderPizza("pepperoni");
         for (PizzaStore ps : lst) ps.orderPizza("cheese");
+        for (PizzaStore ps : lst) ps.orderPizza("clam");
+        for (PizzaStore ps : lst) ps.orderPizza("veggie");
     }
 }
