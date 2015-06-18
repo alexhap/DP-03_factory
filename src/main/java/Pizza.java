@@ -10,7 +10,7 @@ public abstract class Pizza {
     String sauce;
     List<String> toppings = new ArrayList<String>();
 
-    public Pizza prepare() {
+    public void prepare() {
         System.out.println("Preparing '" + name + "'");
         System.out.println("  Tossing dough...");
         System.out.println("  Adding sauce...");
@@ -19,19 +19,15 @@ public abstract class Pizza {
             for (String str : toppings)
                 System.out.println("    + ".concat(str));
         }
-        return this;
     }
-    public Pizza bake() {
+    public void bake() {
         System.out.println("  Baking for 20 minutes at 360.");
-        return this;
     }
-    public Pizza cut() {
+    public void cut() {
         System.out.println("  Cutting the pizza into eight diagonal slices.");
-        return this;
     }
-    public Pizza box() {
+    public void box() {
         System.out.printf("  Placing pizza in official %s box.\n", this.getClass().getName());
-        return this;
     }
     public String getName() { return name; }
 
